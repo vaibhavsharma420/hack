@@ -17,3 +17,69 @@ int main()
     cout<<z<<endl;
     return 0;
 }
+
+//Pass by Value
+
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+void swap(int x,int y)
+{
+    int g;
+    g=x;
+    x=y;
+    y=g;
+    cout<<x<<endl<<y<<endl;
+}
+int main()
+{
+    int a=10;
+    int b=20;
+    swap(a,b);
+    
+    return 0;
+}
+
+//Call by address
+
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+void swap(int *y,int *x)
+{
+    int g;
+    g=*x;
+    *x=*y;
+    *y=g;
+    
+}
+int main()
+{
+    int a=10;
+    int b=20;
+    swap(&a,&b);
+    printf("%d\n%d",a,b);
+    
+}
+
+/Call by Reference 
+
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+void swap(int &x,int &y)
+{
+    int g;
+    g=x;
+    x=y;
+    y=g;
+    cout<<x<<endl<<y<<endl;
+}
+int main()
+{
+    int a=10;
+    int b=20;
+    swap(a,b);
+    
+    return 0;
+}
