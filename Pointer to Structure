@@ -1,1 +1,39 @@
+Static value in Heap
+
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+struct rect
+{
+    int l;
+    int b;
+};
+int main()
+{
+    struct rect r={10,5};
+    struct rect *p=&r;
+    (*p).l=20;
+    cout<<r.l;
+    return 0;
+}
+
+Dyanmic value in Heap
+
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+struct rect
+{
+    int l;
+    int b;
+};
+int main()
+{
+    struct rect *p;
+    p=new rect;
+    p->l=10;
+    p->b=44;
+    cout<<p->l<<endl<<p->b<<endl;
+    return 0;
+}
 
