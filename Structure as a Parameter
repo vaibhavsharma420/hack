@@ -1,0 +1,61 @@
+//Call by Value
+
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+struct rect
+{
+    int l;
+    int b;
+};
+int area(struct rect r1)
+{
+    return r1.l*r1.b;
+}
+int main()
+{
+    struct rect r={10,12};
+    printf("%d",area(r));
+}
+
+//call by reference
+
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+struct rect
+{
+    int l;
+    int b;
+};
+int area(struct rect &r1)
+{
+    r1.l++;r1.b++;
+    return r1.l*r1.b;
+}
+int main()
+{
+    struct rect r={10,12};
+    printf("%d",area(r));
+}
+
+//call by address
+
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+struct rect
+{
+    int l;
+    int b;
+};
+int area(struct rect *r1,int a)
+{
+   r1->l=a;
+}
+int main()
+{
+    struct rect r={10,12};
+    area(&r,1000);
+    
+}
