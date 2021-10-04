@@ -1,0 +1,36 @@
+//https://codeforces.com/contest/1574/problem/A
+#include<bits/stdc++.h>
+#define ll long long
+#define lld long long int
+#define fastio ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
+#define frInt(x,n) for(int i=x;i<n;i++)
+#define frLld(x,n) for(lld i=x;i<n;i++)
+#define all(v) v.begin(),v.end()
+#define maxt(a,b,c) max(a,max(b,c))
+#define mint(a,b,c) min(a,min(b,c))
+#define rsort(v) sort(v.rbegin(),v.rend())
+#define pb push_back
+#define printarr(a,n) for(int i=0;i<n;i++)cout<<a[i]<<" ";cout<<"\n";
+using namespace std;
+void printBracket(int n){
+    frInt(0,n){
+        cout<<"(";
+    }
+    frInt(0,n){
+        cout<<")";
+    }
+}
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        frInt(0,n){
+            printBracket(i);
+            printBracket(n-i);
+            cout<<"\n";
+        }
+    }
+    return 0;
+}
