@@ -1,0 +1,43 @@
+#include<iostream>
+#include<climits>
+using lld=long long int;
+using namespace std;
+int main(){
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    int q;
+    cin>>q;
+    while(q--){
+        lld n,l,r,ans=INT_MAX,base=0;
+        cin>>n>>l>>r;
+        lld B;
+        if(n<l){
+            cout<<l<<"\n";
+            continue;
+        }
+        if(n>=l && n<=r){
+            cout<<n<<"\n";
+            continue;
+        }
+        for(B=r;B>=l;B--){
+            lld rem=0,q=0,num=n;
+            while(num>0){
+                q=num/B;
+                rem+=num%B;
+                //s+=rem;
+                num=q;
+                if(rem>ans)
+                    break;
+            }
+            if(rem<ans){
+                ans=rem;
+                base=B;
+
+            }
+            if(ans==1)
+                break;
+        }
+        cout<<base<<"\n";
+    }
+    return 0;
+}
