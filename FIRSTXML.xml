@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="stylexml.css"?>
+<JUIT>
+	
+	<subject>Members of the team</subject>
+
+	<body>
+	<member>
+		<name>Ansh Jaiswal</name>
+		<gender>Gender-male</gender>
+		<college>College-JUIT</college>
+		<nationality>Nationality-Allahabad</nationality>
+		<skills>Skills-Android Development</skills>
+	</member>
+	<member>
+		<name>Vaibhav Sharma</name>
+		<gender>Gender-male</gender>
+		<college>College-JUIT</college>
+		<nationality>Nationality-Lucknow</nationality>
+		<skills>Skills-React Native and Java Programming</skills>
+	</member>
+	<member>	
+		<name> Arnav Saraswat</name>
+		<gender>Gender-male</gender>
+		<college>College-IIIT, ALLD</college>
+		<nationality>Nationality-Germany</nationality>
+		<skills>Skills-Photoshop and Full-Stack Web Development</skills>
+	</member>
+	<member>
+		<name>Devbrat Srivastava</name>
+		<gender>Gender-still figuring out</gender>
+		<college>College-JUET</college>
+		<nationality>Nationality-Pakistan</nationality>
+		<skills>Skills-Photoshop and Video-Editing</skills>
+	</member>
+	<member>	
+		<name> Ajay Tyagi</name>
+		<gender>Gender-male</gender>
+		<college>College-JIIT</college>
+		<nationality>Nationality-Indian</nationality>
+		<skills>Skills-Photoshop and Video-Editing</skills>
+	</member>
+		<para>SOME details ABOUT THE TEAM.....  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</para>
+	</body>
+</JUIT>
