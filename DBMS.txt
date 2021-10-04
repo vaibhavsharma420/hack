@@ -1,0 +1,7 @@
+Name	Roll Number	Date of Birth	Percentage	City		State		Country
+
+Aman	191		2001-03-01	43%		Indore		Madhya Pradesh	India
+Ayushi	192		2000-01-12	97%		Allahabad	Uttar Pradesh	India
+Tejas	193		2002-12-31	72%		Lahore		Pakistan		India
+Sujal	194		2003-01-28	69%		Mandi		Himachal Pradesh	India
+Kautic	195		2001-02-28	81%		Kanpur		Uttar Pradesh	India
