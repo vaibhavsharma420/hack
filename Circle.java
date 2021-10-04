@@ -1,12 +1,16 @@
 import java.util.Scanner;
 class Circle
 {
-    protected int r;
+    double r;
     public void input()
     {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter r");
-        r=sc.nextInt();
+        System.out.println("Enter radius");
+        r=sc.nextDouble();
+    }
+    public void input(double x)
+    {
+        r=x;
     }
     public double area()
     {
@@ -17,3 +21,4 @@ class Circle
         return 2*3.14*r;
     }
 }
+    

@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.params=
 comment0.target=void\ input()
-comment1.params=
-comment1.target=double\ area()
+comment1.params=x
+comment1.target=void\ input(double)
 comment2.params=
-comment2.target=double\ circumference()
-numComments=3
+comment2.target=double\ area()
+comment3.params=
+comment3.target=double\ circumference()
+numComments=4
