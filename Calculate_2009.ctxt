@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=num\ ch
+comment0.target=void\ num_calc(int,\ char)
+comment1.params=a\ b\ ch
+comment1.target=void\ num_calc(int,\ int,\ char)
+comment2.params=s1\ s2
+comment2.target=void\ num_calc(java.lang.String,\ java.lang.String)
+numComments=3

@@ -1,13 +1,30 @@
+
+import java.util.Scanner;
 class Triangle
 {
-    public double area(int a,int b,int c)
+    double a,b,c;
+    public void input()
     {
-        double s=(a+b+c)/2.0;
-        return Math.sqrt(s*(s-a)*(s-b)*(s-c));
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter sides of the triangle");
+        a=sc.nextDouble();
+        b=sc.nextDouble();
+        c=sc.nextDouble();
     }
-    public int perimeter(int a,int b,int c)
+    public void input(double x,double y,double z)
     {
-        return a+b+c;
+        a=x;
+        b=y;
+        c=z;
+    }
+    public void area()
+    {
+        double s=(double)(a+b+c)/2.0;
+        double ar=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+        System.out.println("Area="+ar);
+    }
+    public void perimeter()
+    {
+        System.out.println("Perimeter="+(a+b+c));
     }
 }
-        
