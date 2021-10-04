@@ -10,17 +10,5 @@ class biggest
         int b=sc.nextInt();
         System.out.println("Enter third number");
         int c=sc.nextInt();
-        if(a>b&&a>c)
-        {
-            System.out.println(a);
-        }
-        else if(b>a&&b>c)
-        {
-            System.out.println(b);
-        }
-        else if(c>a&&c>b)
-        {
-            System.out.println(c);
-        }
-    }
-}
+        int max=a > b ? (a > c ? a : c) : (b > c ? b : c) ;
+        System.out.println("The maximum of three numbers is"+max);
