@@ -4,7 +4,7 @@ class NameWise
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        String n[]=new String[10];
+        String n[]=new String[50];
         for(int x=0;x<=9;x++)
         {
             System.out.println("Enter name "+(x+1));
