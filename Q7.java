@@ -4,27 +4,51 @@ class Q7
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int ar[]=new int[10];
-        for(int x=0;x<=9;x++)
+        System.out.println("MENU\n1-Prime Number or not\n2-Automorphic Number or not\nEnter your choice");
+        int n=sc.nextInt();
+        int a;
+        switch(n)
         {
+            case 1:
             System.out.println("Enter any number");
-            ar[x]=sc.nextInt();
-        }
-        for(int x=0;x<=9;x++)
-        {
-            for(int y=0;y<=8;y++)
+            a=sc.nextInt();
+            int c=0;
+            for(int x=1;x<=a;x++)
             {
-                if(ar[y]<ar[y+1])
+                if(a%x==0)
                 {
-                    int t=ar[y];
-                    ar[y]=ar[y+1];
-                    ar[y+1]=t;
+                    c++;
                 }
             }
-        }
-        for(int x=0;x<=9;x++)
-        {
-            System.out.println(ar[x]);
+            if(c==2)
+            {
+                System.out.println("Prime Number");
+            }
+            else
+            {
+                System.out.println("NOT a prime number");
+            }
+            break;
+            
+            case 2:
+            System.out.println("Enter any number");
+            a=sc.nextInt();
+            int s=a*a;
+            int d=1;
+            for(int x=a;x!=0;x=x/10)
+            d=d*10;
+            if(s%d==a)
+            {
+                System.out.println("Automorphic Number");
+            }
+            else
+            {
+                System.out.println("NOT");
+            }
+            break;
+            
+            
         }
     }
 }
+            

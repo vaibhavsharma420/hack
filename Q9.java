@@ -4,45 +4,26 @@ class Q9
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        System.out.println("MENU\n1\tTo check for a composite number\n2\tTo find the smallest digit of an integer that is input\nEnter your choice");
-        int n=sc.nextInt();
-
-        switch(n)
+        System.out.println("Enter any string");
+        String s=sc.nextLine().toUpperCase();
+        int l=s.length();
+        for(char y='A';y<='Z';y++)
         {
-            case 1:
-            System.out.println("Enter any number");
-            int b=sc.nextInt();
-            int count=0;
-            for(int x=1;x<=b;x++)
+            int c=0;
+            for(int x=0;x<=l-1;x++)
             {
-                if(b%x==0)
-                    count++;
+                char ch=s.charAt(x);
+                if(ch==y)
+                {
+                    c++;
+                }
             }
-            if(count > 2)
+            if(c!=0)
             {
-                System.out.println("Composite number");
+                System.out.println(y+"\t"+c);
             }
-            else 
-            {
-                System.out.println("Prime number");
-            }
-            break;
-
-            case 2:
-            System.out.println("Enter any number");
-            int a=sc.nextInt();
-            int min=a%10;
-            for(int x=a/10;x!=0;x=x/10)
-            {
-                int d=x%10;
-                if(d<min)
-                    min=d;
-            }
-            System.out.println("Smallest digit is "+min);
-            break;
-
-            default:
-            System.out.println("Wrong input");
         }
     }
 }
+
+            
