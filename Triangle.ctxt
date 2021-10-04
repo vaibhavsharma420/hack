@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=a\ b\ c
+comment0.target=double\ area(int,\ int,\ int)
+comment1.params=a\ b\ c
+comment1.target=int\ perimeter(int,\ int,\ int)
+numComments=2
