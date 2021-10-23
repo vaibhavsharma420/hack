@@ -48,10 +48,10 @@ using namespace std;
 
 
 void bubbleSort(int arr[], int n)
-{
-	for(int j = 0; j < n - 1; j++)
+{ int i,j;
+	for(j = 0; j < n - 1; j++)
     {
-		for(int i = 0; i < n-1-j; i++)
+		for(i = 0; i < n-1-j; i++)
 		 {
 			if(arr[i] > arr[i+1])
 			 {
@@ -73,19 +73,19 @@ int main()
 
 	while (t--)
 	{
-		int size;
-		cin >> size;
+		int c,i;
+		cin >> c;
 
-		int *input = new int[size];
+		int *input = new int[c];
 
-		for (int i = 0; i < size; ++i)
+		for ( i = 0; i < c; ++i)
 		{
 			cin >> input[i];
 		}
 
-		bubbleSort(input, size);
+		bubbleSort(input, c);
 
-		for (int i = 0; i < size; ++i)
+		for (i = 0; i < c; ++i)
 		{
 			cout << input[i] << " ";
 		}
