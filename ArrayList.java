@@ -1,18 +1,17 @@
+package ensurecapacitydemo;
+
 import java.util.*;
-import java.util.ArrayList;
-import java.util.Collections;
-public class Main {
-  public static void main(String[] args) {
-  // Write your code here
-  ArrayList <String> na= new ArrayList<String>();
-  na.add("red");
-  na.add("blue");
-  na.add("green");
-  na.add("yellow");
-  na.add(0,"orange");
-  for(int i=0;i<na.size();i++)
-  {
-    System.out.println(na.get(i));
-  }
- }
+class Main{
+	public static void main(String[] args) {
+		ArrayList a1 = new ArrayList();
+		a1.add("asd");
+		a1.add("xyz");
+		a1.add(10);
+		for(Object a:a1)
+		    System.out.println(a);
+		    
+		a1.add(0,"wer");    
+		for(Object a:a1)
+		    System.out.println(a);
+	}
 }
